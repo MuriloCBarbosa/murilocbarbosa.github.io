@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@font-face{ font-family: 'Krona One', sans-serif;}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@font-face{font-family: 'Roboto Mono', monospace;}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(14, 14, 14);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Krona One';
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+}
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*menu*/
+.cabecalho{
+    text-align: center;
+    background-color: black;
+}
+.cabecalho-logo{
+    font-size: 2em;
+    display: block;
+    padding: 0.4em 0 1em 0;
+}
+.cabecalho-menu{
+    text-align: center;
+    background-color: black;
+}
+.cabecalho-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.cabecalho-menu a{
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    font-family: 'Krona One';
+}
+.cabecalho-menu a:hover{
+    background-color: rgb(24, 24, 24);
+}
+.cabecalho-menu li:last-child{
+    border-bottom: 2px rgb(230, 230, 230) solid;
+}
+
+/*banner*/
+.lateral-esquerda{
+    display: none;
+}
+.lateral-direita{
+    display: none;
+}
+
+/*corpo*/
+main a{
+    color: black;
+    transition: all 0.4s linear;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+main a:hover{
+    text-decoration: none;
+    color: rgb(14, 112, 14);
+    border-color: transparent;
+}
+.noticia{
+    background-color: white;
+    text-align: center;
+    margin: 2em;
+    padding: 0.8em;
+}
+.noticia h1{
+    font-size: 1.6em;
+}
+.noticia p{
+    font-size: 1em;
+}
+iframe{
+    height: 14em;
+    width: 90%;
+}
+
+/*rodape*/
+.rodape{
+    border-top: 2px rgb(230, 230, 230) solid;
+    text-align: center;
+}
+.rodape-icons{
+    background-color: rgb(24, 24, 24);
+    margin-top: 0;
+    padding: 0.7em;
+}
+.rodape p{
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+.rodape li{
+    display: inline-block;
+    margin: 0.5em 0.5em;
+}
+.rodape a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: all 0.4s;
+}
+.icon-facebook:hover{
+    color: #3b5998;
+}
+.icon-instagram:hover{
+    color: #8a3ab9;
+}
+.icon-twitter:hover{
+    color: #00acee
+}
+.icon-mail:hover{
+    color: rgb(29, 197, 29);
+}
+
+/*---  780px responsivo ---*/
+/* 780 / 16 = 48.75 */
+@media screen and (min-width: 48.75em){
+    
+    .cabecalho-logo{
+        float: left;
+    }
+    .cabecalho{
+        border-bottom: 2px rgb(230, 230, 230) solid;
+    }
+    .cabecalho-menu{
+        float: right;
+        margin: 3.5em 3em 1em 0.5em;
+    }
+    .cabecalho-menu ul{
+        padding: 0;
+        margin: 0;
+    }
+    .cabecalho-menu li{
+        display: inline-block;
+    }
+    .cabecalho-menu li:last-child{
+        border-bottom: none;
+    }
+    .cabecalho-menu a:hover{
+        background-color: black;
+        color: rgb(14, 112, 14);
+    }
+
+    /*corpo*/
+    /*.col-1_2{
+        width: 44%;
+        margin: 3%;
+        float: left;
+        box-sizing: border-box;
+    }*/
+    .grid{
+        position: relative;
+    }
+    .col-1{
+        float: left;
+        width: 48%;
+    }
+    .col-2-2{
+        float: right;
+        width: 40%;
+    }
+    .row1{
+        position: absolute;
+    }
+    .row2{
+        position: absolute;
+        bottom: 0;
+    }
+    .noticia h1{
+        font-size: 1.4em;
+    }
+}
+
+/*---  1000px responsivo ---*/
+@media screen and (min-width: 70em){
+    
+    .principal{
+        width: 80%;
+        margin: auto;
+    }
+    .col-1{
+        width: 48%;
+    }
+    .col-2-2{
+        width: 40%;
+    }
+
+    /*banner*/
+    .lateral-esquerda{
+        display: block;
+    }
+    .lateral-esquerda img{
+        width: 10%;
+        height: 100%;
+        position: fixed;
+    }
+    .lateral-direita{
+        display: block;
+    }
+    .lateral-direita img{
+        width: 10%;
+        height: 100%;
+        position: fixed;
+        right: 0;
+    }
+}
+
+@media screen and (min-width: 78em){
+
+    .col-1{
+        width: 48%;
+    }
+    .col-2-2{
+        width: 42%;
+    }
+}
