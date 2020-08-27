@@ -270,4 +270,7 @@ p{
     .col-2-2{
         width: 42%;
     }
+    .cabecalho-menu a{
+        font-size: 1.3em;
+    }
 }
