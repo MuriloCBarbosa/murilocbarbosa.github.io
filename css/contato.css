@@ -31,7 +31,7 @@
     display: block;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
-    color: white;
+    color: rgb(228, 228, 228);
 }
 .formulario input, .formulario textarea{
     border-radius: 5px;
