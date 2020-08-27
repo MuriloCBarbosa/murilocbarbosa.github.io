@@ -33,6 +33,30 @@ p{
     clear: both;
 }
 
+/*botão*/
+.botao{
+    background-color: rgb(29, 197, 29);
+    border: 3px solid rgb(29, 197, 29);
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 0.3em 0.8em;
+    border-radius: 5px;
+    display: block;
+    width: auto;
+    letter-spacing: 0.1em;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+.botao:hover{
+    background-color: rgb(14, 112, 14);
+    border-color: rgb(14, 112, 14);
+    color: white;
+    outline: none;
+}
+
 /*menu*/
 .cabecalho{
     text-align: center;
@@ -78,13 +102,13 @@ p{
 }
 
 /*corpo*/
-main a{
+.main-index a{
     color: black;
     transition: all 0.4s linear;
     text-decoration: none;
     border-bottom: 1px solid black;
 }
-main a:hover{
+.main-index a:hover{
     text-decoration: none;
     color: rgb(14, 112, 14);
     border-color: transparent;
@@ -94,6 +118,7 @@ main a:hover{
     text-align: center;
     margin: 2em;
     padding: 0.8em;
+    box-shadow: 1px 1px 5px rgb(146, 146, 146);
 }
 .noticia h1{
     font-size: 1.6em;
@@ -101,7 +126,7 @@ main a:hover{
 .noticia p{
     font-size: 1em;
 }
-iframe{
+.video{
     height: 14em;
     width: 90%;
 }

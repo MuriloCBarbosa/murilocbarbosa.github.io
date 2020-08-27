@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@font-face{ font-family: 'Krona One', sans-serif;}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@font-face{font-family: 'Roboto Mono', monospace;}
+
+.picos h1{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin: 1.4em;
+}
+.picos p{
+    color: rgb(228, 228, 228);
+    text-align: center;
+    margin: 0 1.5em 2.2em 1.5em;
+}
+.mapa-picos{
+    width: 90%;
+    margin: 0 5% 5% 5%;
+}
+
+@media screen and (min-width: 70em){
+
+    .picos h1{
+        font-size: 1.6em;
+    }
+    .picos p{
+        font-size: 1.1em;
+    }
+}
