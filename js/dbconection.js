@@ -18,7 +18,7 @@ function readnews(){
             console.log(doc.data().titulo);
             /*document.getElementById('titulo').innerHTML += doc.data().titulo;*/
             document.getElementById('noticias').innerHTML += '<article class="noticia col-1_2 col-1 noticia-grande">'+
-                '<h1><a href="#">'+doc.data().titulo+'</a></h1>'+
+                '<h1><a href='+doc.data().link+'>'+doc.data().titulo+'</a></h1>'+
                 '<p>'+doc.data().texto+'</p>'+
                 '<iframe width="560" height="315" src='+doc.data().video+' allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>'+
                 '</article>';            
