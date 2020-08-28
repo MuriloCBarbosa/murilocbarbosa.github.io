@@ -62,11 +62,6 @@ p{
     text-align: center;
     background-color: black;
 }
-.logo{
-    padding-top: 30px;
-    width: 50px;
-    height: 50px;
-}
 .cabecalho-logo{
     font-size: 2em;
     display: block;
@@ -124,6 +119,7 @@ p{
     margin: 2em;
     padding: 0.8em;
     box-shadow: 1px 1px 5px rgb(146, 146, 146);
+    box-sizing: border-box;
 }
 .noticia h1{
     font-size: 1.6em;
@@ -134,34 +130,6 @@ p{
 .video{
     height: 14em;
     width: 90%;
-}
-.eventos1{
-    background-color: white;
-    text-align: center;
-    margin: 2em;
-    padding: 0.8em;
-    box-shadow: 1px 1px 5px rgb(146, 146, 146);
-}
-.eventos2{
-    background-color: white;
-    text-align: center;
-    margin: 2em;
-    padding: 0.8em;
-    box-shadow: 1px 1px 5px rgb(146, 146, 146);
-}
-.botao-ver-mais{
-    background-color:white;
-    /*border: 3px solid rgb(29, 197, 29);*/
-    font-size: 1.1em;
-    font-weight: 600;
-    padding: 0.3em 0.8em;
-    border-radius: 5px;
-    display: inline-block;
-    width: auto;
-    letter-spacing: 0.1em;
-    /*margin: 2% 42.5% 0 42.5%;*/
-    cursor: pointer;
-    transition: all 0.7s;
 }
 
 /*rodape*/
@@ -205,6 +173,7 @@ p{
 /*---  780px responsivo ---*/
 /* 780 / 16 = 48.75 */
 @media screen and (min-width: 48.75em){
+    
     .cabecalho-logo{
         float: left;
     }
@@ -240,19 +209,13 @@ p{
     .grid{
         position: relative;
     }
-    .grid1{
-        float: left;
-    }
-    .grid2{
-        float: right;
-    }
     .col-1{
         float: left;
-        width: 48%;
+        width: 56%;
     }
     .col-2-2{
         float: right;
-        width: 40%;
+        width: 38%;
     }
     .row1{
         position: absolute;
@@ -261,8 +224,20 @@ p{
         position: absolute;
         bottom: 0;
     }
+    .noticia{
+        margin: 0;
+    }
     .noticia h1{
         font-size: 1.4em;
+    }
+    .noticia-grande{
+        margin: 2em 0.5em 0em 2em;
+    }
+    .noticia-pequena{
+        margin: 2em 2em 0em 0.5em;
+    }
+    .noticia-final{
+        margin-bottom: 2em;
     }
 }
 
@@ -274,10 +249,10 @@ p{
         margin: auto;
     }
     .col-1{
-        width: 48%;
+        width: 56%;
     }
     .col-2-2{
-        width: 40%;
+        width: 38%;
     }
 
     /*banner*/
@@ -298,17 +273,41 @@ p{
         position: fixed;
         right: 0;
     }
+    .noticia{
+        margin: 0;
+    }
+    .noticia-grande{
+        margin: 2em 0.5em 0em 2em;
+    }
+    .noticia-pequena{
+        margin: 2em 2em 0em 0.5em;
+    }
+    .noticia-final{
+        margin-bottom: 2em;
+    }
 }
 
 @media screen and (min-width: 78em){
 
     .col-1{
-        width: 48%;
+        width: 56%;
     }
     .col-2-2{
-        width: 42%;
+        width: 38%;
     }
     .cabecalho-menu a{
         font-size: 1.3em;
+    }
+    .noticia{
+        margin: 0;
+    }
+    .noticia-grande{
+        margin: 2em 0.5em 0em 2em;
+    }
+    .noticia-pequena{
+        margin: 2em 2em 0em 0.5em;
+    }
+    .noticia-final{
+        margin-bottom: 2em;
     }
 }
