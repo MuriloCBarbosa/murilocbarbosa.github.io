@@ -129,6 +129,23 @@ p{
     height: 14em;
     width: 90%;
 }
+.lista-pagina{
+    text-align: center;
+}
+.lista-pagina ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.lista-pagina li{
+    display: inline-block;
+    padding: 0.3em;
+}
+.lista-pagina a{
+    color: white;
+    border: 1px solid white;
+    padding: 0.3em;
+}
 /*.eventos1{
     background-color: white;
     text-align: center;
