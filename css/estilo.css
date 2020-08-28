@@ -131,6 +131,8 @@ p{
 }
 .lista-pagina{
     text-align: center;
+    margin-bottom: 1em;
+    transform: translate(-1.8%, 0%);
 }
 .lista-pagina ul{
     margin: 0;
@@ -139,12 +141,22 @@ p{
 }
 .lista-pagina li{
     display: inline-block;
-    padding: 0.3em;
+    margin: 0.4em;
 }
 .lista-pagina a{
     color: white;
     border: 1px solid white;
     padding: 0.3em;
+    font-size: 1.1em;
+    transition-property: background-color, background-color;
+    transition-duration: 0.1s, 0.2s;
+    transition-timing-function: cubic-bezier(.67,-0.38,.5,1.5);
+    transition-delay: 0s, 0.1s;
+}
+.lista-pagina a:hover{
+    color: white;
+    border: 1px solid rgb(14, 112, 14);
+    background-color: rgb(14, 112, 14); 
 }
 /*.eventos1{
     background-color: white;
