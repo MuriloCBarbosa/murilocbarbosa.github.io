@@ -9,8 +9,17 @@
         <link rel="stylesheet" href="icomoon/style.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/estilo.css">
+        <!-- biblioteca banco-->
+        <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+
+        <script src="js/dbconection.js"></script>
     </head>
     <body>
+        <script>conection();</script>
+        <script>readnews();</script>
+        <script>lastnews();</script>
 
         <div class="lateral-esquerda">
             <img src="imagens/banner-nike.png" alt="banner">
@@ -37,6 +46,11 @@
             </header>
 
             <main class="clearfix main-index">
+                <div id="noticias" class="grid clearfix">
+                    <div id="antigas" class="col-2-2 clearfix">
+
+                    </div>
+                </div>
 
                 <div class="grid clearfix">
                     <article class="noticia col-1_2 col-1 noticia-grande">
@@ -119,5 +133,11 @@
             </ul>
             <p>&copy; MbGp 2020</p>
         </footer>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
     </body>
 </html>
