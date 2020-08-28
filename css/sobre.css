@@ -49,26 +49,19 @@ figcaption p{
         line-height: 1.4;
     }
 
-    figcaption{
-        opacity: 0;
-        position: relative;
-        top: 0;
-        background-color: rgba(0, 0, 0, 0.404);
-        width: 70%;
-        height: 100%;
-        transition: opacity 0.8s;
-        margin-bottom: 2em;
+    .foto-sobre{
+        text-align: center;
+        width: 90%;
+        margin: 0 5%;
     }
-    figcaption:hover{
-        opacity: 1;
+    .foto-sobre p{
+        text-align: center;
+        font-weight: 700;
     }
-    figcaption p{
-        font-size: 1.4em;
-        font-weight: 800;
-        position: absolute;
-        bottom: 0;
-        right: 35%;
-        color: black;
+    .foto-sobre img{
+        max-width: 100%;
+        border: 2px solid white;
+        box-shadow: 1px 1px 3px rgb(146, 146, 146);
     }
 
 }
