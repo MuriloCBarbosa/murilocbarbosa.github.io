@@ -132,7 +132,7 @@ p{
 .lista-pagina{
     text-align: center;
     margin-bottom: 1em;
-    transform: translate(-1.8%, 0%);
+    transform: translate(-2.5%, 0%);
 }
 .lista-pagina ul{
     margin: 0;
@@ -306,6 +306,12 @@ p{
     }
     .noticia-final{
         margin-bottom: 2em;
+    }
+
+    .lista-pagina{
+        text-align: center;
+        margin-bottom: 1em;
+        transform: translate(-1.8%, 0%);
     }
 }
 /*---  1000px responsivo ---*/
