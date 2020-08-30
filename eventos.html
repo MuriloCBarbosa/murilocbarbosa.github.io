@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="icomoon/style.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/eventos.css">
         <script src="js/script.js"></script>
     </head>
     <body>
@@ -34,6 +35,21 @@
                 </nav>
             </header>
 
+
+            <main class="main-eventos clearfix">
+
+                <div class="grid-eventos">
+                    <div class="col-1-2-eventos">
+                        <h1 class="hidden">Próximos eventos</h1>
+                        <input type="button" value="Próximos Eventos" class="botao" onclick="Proximos()">
+                    </div>
+                    <div class="col-2-2-eventos">
+                        <h1 class="hidden">Eventos anteriores</h1>
+                        <input type="button" value="Eventos Anteriores" class="botao" onclick="Anteriores()">
+                    </div>
+                </div>
+
+            </main>
 
             <main class="clearfix main-index"> 
                 <div class="grid1 clearfix" id="proximos-eventos">
@@ -78,6 +94,7 @@
                 </div>-->
                 <!--<input type="button" value="voltar" class="botao-ver-mais" onclick="Voltar()">-->
             </main>
+
         <footer class="rodape">
             <ul class="rodape-icons">
                 <li><a href="https://pt-br.facebook.com/" class="icon-facebook" target="_blank"><span class="hidden">Facebook</span></a></li>
