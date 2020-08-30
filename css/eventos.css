@@ -40,25 +40,41 @@
 .grid2{
     float: right;
 }
+.botao-eventos{
+    padding: 6% 2%;
+    text-transform: uppercase;
+    font-size: 0.97em;
+}
 
 .col-1-2-eventos{
     float: left;
-    width: 54%;
-    margin: 2em 1% 1em 5%;
-    background-color: white;
-    padding: 0.8em;
-    box-sizing: border-box;
+    width: 45%;
+    margin: 1em 1% 1em 1em;
 }
 .col-2-2-eventos{
-    float: right;
-    width: 34%;
-    margin: 2em 5% 1em 1%;
-    background-color: white;
-    padding: 0.8em;
-    box-sizing: border-box;
+    float: left;
+    width: 45%;
+    margin: 1em 1em 1em 1%;
 }
-.col-1-2-eventos h1, .col-2-2-eventos h1{
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 1.2em;
+
+/*corpo*/
+.titulo-prox-eventos{
+    background-color: white;
+    text-align: center;
+    margin: 2em 1.35em;
+    padding: 1em;
+    box-shadow: 1px 1px 5px rgb(146, 146, 146);
+    box-sizing: border-box;
+    font-size: 1.5em;
+}
+.noticia-evento{
+    background-color: white;
+    text-align: center;
+    margin: 2em;
+    padding: 0.8em;
+    box-shadow: 1px 1px 5px rgb(146, 146, 146);
+	box-sizing: border-box;
+}
+.noticia-evento h1{
+    font-size: 1.5em;
 }
