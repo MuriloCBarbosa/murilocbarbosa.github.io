@@ -17,10 +17,26 @@ function OpenClose(){
     }
 }*/
 
+function proximosEventos(){
+    if(document.getElementById('proximos-eventos').style.display == 'inline'){
+        document.getElementById('eventos-anteriores').style.display = 'none';
+    }else{
+        document.getElementById('proximos-eventos').style.display = 'inline';
+        document.getElementById('eventos-anteriores').style.display = 'none';
+    }
+}
+
+function eventosAnteriores(){
+    if(document.getElementById('eventos-anteriores').style.display == 'inline'){
+        document.getElementById('proximos-eventos').style.display = 'none';
+    }else{
+        document.getElementById('eventos-anteriores').style.display = 'inline';
+        document.getElementById('proximos-eventos').style.display = 'none';
+    }
+}
 
 
-
-var proxeventos = true;
+/*var proxeventos = true;
 
 function Proximos(){
     if (proxeventos){
@@ -32,8 +48,6 @@ function Proximos(){
     }
 }
 
-
-
 var eventosant = true;
 
 function Anteriores(){
@@ -44,7 +58,7 @@ function Anteriores(){
         document.getElementById('proximos-eventos').style.display="none"
         eventosant = true;
     }
-}
+}*/
 
 /*var voltar = true;
 

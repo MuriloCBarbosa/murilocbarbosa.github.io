@@ -41,19 +41,19 @@
                 <div class="grid-eventos clearfix">
                     <div class="">
                         <h1 class="hidden">Próximos eventos</h1>
-                        <input type="button" value="Próximos Eventos" class="botao botao-eventos" onclick="Proximos()">
+                        <input type="button" value="Próximos Eventos" class="botao botao-eventos" onclick="proximosEventos()">
                     </div>
                     <div class="">
                         <h1 class="hidden">Eventos anteriores</h1>
-                        <input type="button" value="Eventos Anteriores" class="botao botao-eventos" onclick="Anteriores()">
+                        <input type="button" value="Eventos Anteriores" class="botao botao-eventos" onclick="eventosAnteriores()">
                     </div>
                 </div>
 
-                <div class="prox-eventos">
+                <div class="prox-eventos" id="proximos-eventos">
                     <h1 class="titulo-eventos">Próximos eventos</h1>
                     <article class="noticia-evento">
                         <h1>Matriz Skate Pro</h1>
-                        <p class="data-evento">Dezembro 2020</p>
+                        <p class="data-evento">Dezembro - 2020</p>
                         <p>O Matriz Skate Pro 2020 por enquanto vai rolar, mas sem presença de público. O evento que já está no calendário de todos no fim do ano vai acontecer em dezembro, mas sem uma data certa e não foi confirmado quem vai participar.</p>
                     </article>
 
@@ -70,27 +70,30 @@
                     </article>
                 </div>
 
-                <div class="eventos-anteriores">
+                <div class="eventos-anteriores" id="eventos-anteriores">
                     <h1 class="titulo-eventos">Eventos anteriores</h1>
                     <article class="noticia-evento">
                         <h1>Slides & grinds</h1>
+                        <p class="data-evento">Março - 2020</p>
                         <p>Ocorreu a final do S&G4, com a nova geração brasileira andando muito, confira no canal Sobreskate.</p>
                     </article>
 
                     <article class="noticia-evento">
                         <h1>Street League</h1>
+                        <p class="data-evento">Janeiro - 2020</p>
                         <p>A última etapa da SLS ocorreu em janeiro de 2020 no Rio de Janeiro, com um recorde de 9Clubs, confira esta edição do campeonato.</p>
                     </article>
 
                     <article class="noticia-evento">
                         <h1>Oi Bowl Jam</h1>
+                        <p class="data-evento">Janeiro - 2020</p>
                         <p>O campeonato aconteceu em janeiro no Rio e foi um grande campeonato com muitas tricks.</p>
                     </article>
                 </div>
 
             </main>
 
-            <main class="clearfix main-index"> 
+            <!--<main class="clearfix main-index"> 
                 <div class="grid1 clearfix" id="proximos-eventos">
                     <div class="eventos1" >
                         <h1 class="titulo-evento">Próximos eventos</h1>
@@ -105,7 +108,7 @@
 
 
                 </div>
-                <!--<input type="button" value="Eventos Anteriores" class="botao-ver-mais" onclick="Proximos()">-->
+                <input type="button" value="Eventos Anteriores" class="botao-ver-mais" onclick="Proximos()">
 
                 <div class="grid2 clearfix" id="eventos-anteriores">
                         <div class="eventos2" >
@@ -130,9 +133,9 @@
                             <p>Ocorreu a final do S&G4, com a nova geração brasileira andando muito, confira no <a href="https://www.youtube.com/watch?v=H4VVp_mq0aE&list=PLYoZJiwFBPFnusijgtnR5E4tNSHt9J_UW" target="_blank">canal Sobreskate.</a></p>
                         </article>
                     </div>
-                </div>-->
-                <!--<input type="button" value="voltar" class="botao-ver-mais" onclick="Voltar()">-->
-            </main>
+                </div>
+                <input type="button" value="voltar" class="botao-ver-mais" onclick="Voltar()"
+            </main>-->
 
         <footer class="rodape">
             <ul class="rodape-icons">
