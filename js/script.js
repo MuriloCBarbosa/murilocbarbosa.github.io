@@ -16,6 +16,10 @@ function OpenClose(){
         visibilidade = true;
     }
 }*/
+
+
+
+
 var proxeventos = true;
 
 function Proximos(){
