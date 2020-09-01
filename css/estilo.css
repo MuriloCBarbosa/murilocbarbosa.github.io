@@ -159,6 +159,24 @@ p{
     background-color: rgb(14, 112, 14); 
 }
 
+/*paginas das notícias*/
+.pagina-noticia{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.pagina-noticia h1{
+    color: white;
+    font-size: 1.4em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.pagina-noticia p{
+    color: rgb(228, 228, 228);
+    line-height: 1.4;
+    margin-bottom: 2em;
+}
+
 
 /*rodape*/
 .rodape{
