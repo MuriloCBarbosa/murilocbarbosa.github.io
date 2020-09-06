@@ -298,6 +298,11 @@ p{
         margin-bottom: 1em;
         transform: translate(-1.8%, 0%);
     }
+
+    /*paginas das notícias*/
+    .pagina-noticia{
+        text-align: left;
+    }
 }
 /*---  1000px responsivo ---*/
 @media screen and (min-width: 70em){

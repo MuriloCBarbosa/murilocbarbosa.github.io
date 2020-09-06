@@ -77,3 +77,23 @@
 .eventos-anteriores{
     display: none;
 }
+
+
+@media screen and (min-width: 70em){
+    .prox-eventos{
+        float: left;
+        width: 62%;
+        display: inline;
+    }
+    .eventos-anteriores{
+        display: inline;
+        float: right;
+        width: 38%;
+    }
+    .botao-eventos{
+        display: none;
+    }
+    .titulo-eventos{
+        margin-top: 0em;
+    }
+}
