@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="../icomoon/style.css">
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="../css/pagina-noticia.css">
+        <script src="../js/script.js"></script>
         
     </head>
     <body>
@@ -27,7 +29,16 @@
                 
 				<a href="../index.html"><img src="../imagens/skateboard.svg" class="logo"></a>
 
-                <nav class="cabecalho-menu">
+                <div class="botao-menu">
+                    <input type="checkbox" id="checkbox-menu" onclick="mostrarMenu()">
+                    <label for="checkbox-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+
+                <nav class="cabecalho-menu" id="menu">
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="../eventos.html">Eventos</a></li>
@@ -36,6 +47,8 @@
                         <li><a href="../contato.html">Contato</a></li>
                     </ul>
                 </nav>
+                
+
             </header>
 
             <main class="clearfix main-index">

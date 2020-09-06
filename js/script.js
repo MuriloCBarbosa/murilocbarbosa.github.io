@@ -35,6 +35,15 @@ function eventosAnteriores(){
     }
 }
 
+function mostrarMenu(){
+    if(document.getElementById('menu').style.display == 'inline'){
+        document.getElementById('menu').style.display = 'none';
+    }else{
+        document.getElementById('menu').style.display = 'none';
+        document.getElementById('menu').style.display = 'inline';
+    }
+}
+
 
 /*var proxeventos = true;
 

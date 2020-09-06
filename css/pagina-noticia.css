@@ -1,0 +1,184 @@
+@charset "utf-8";
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@font-face{ font-family: 'Krona One', sans-serif;}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@font-face{font-family: 'Roboto Mono', monospace;}
+
+.cabecalho-menu{
+    display: none;
+}
+
+
+.logo{
+    position: relative;
+    right: 8%;
+    top: 1em;
+}
+.botao-menu{
+    position: relative;
+    top: -3em;
+    box-sizing: border-box;
+}
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 1.4em;
+    width: 1.8em;
+    margin: auto 52%;
+    padding: 0.3em;
+    
+}
+label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: white;
+    transition: 0.4s ease-in-out;
+}
+label span:nth-child(1){
+    top: 0;
+}
+label span:nth-child(2){
+    top: 0.75em; 
+}
+label span:nth-child(3){
+    top: 1.5em;
+}
+
+
+
+/*paginas das notícias - corpo*/
+.pagina-noticia{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.pagina-noticia h1{
+    color: white;
+    font-size: 1.4em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.pagina-noticia p{
+    color: rgb(228, 228, 228);
+    line-height: 1.5;
+}
+.pagina-noticia p:last-child{
+    margin-bottom: 2em;
+}
+.imagem-noticia{
+    text-align: center;
+    width: 90%;
+    margin: 0 5%;
+}
+.pagina-noticia img{
+    max-width: 100%;
+    border: 2px solid white;
+    box-shadow: 1px 1px 3px rgb(146, 146, 146);
+}
+
+
+
+/*---  780px responsivo ---*/
+/* 780 / 16 = 48.75 */
+@media screen and (min-width: 48.75em){
+
+    .cabecalho-menu{
+        display: inline;
+    }
+    
+    .botao-menu{
+        display: none;
+    }
+    
+    .logo{
+        margin: 1em 0 2em 9.05em;
+        height: 7%;
+        width: 7%;
+        float: left;
+    }
+    .cabecalho{
+        border-bottom: 2px rgb(230, 230, 230) solid;
+    }
+    .cabecalho-menu{
+        float: right;
+        margin: 3.5em 3em 1em 0.5em;
+    }
+    .cabecalho-menu ul{
+        padding: 0;
+        margin: 0;
+    }
+    .cabecalho-menu li{
+        display: inline-block;
+    }
+    .cabecalho-menu li:last-child{
+        border-bottom: none;
+    }
+    .cabecalho-menu a{
+        font-size: 1em;
+    }
+    .cabecalho-menu a:hover{
+        background-color: transparent;
+        color: rgb(14, 112, 14);
+    }
+    
+    
+
+    /*paginas das notícias - corpo*/
+    .pagina-noticia{
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width: 78em){
+    .col-1{
+        width: 56%;
+    }
+    .col-2-2{
+        width: 38%;
+    }
+    .cabecalho-menu a{
+        font-size: 1.3em;
+    }
+    .noticia{
+        margin: 0;
+    }
+    .noticia-grande{
+        margin: 2em 0.5em 0em 2em;
+    }
+    .noticia-pequena{
+        margin: 2em 2em 0em 0.5em;
+    }
+    .noticia-final{
+        margin-bottom: 2em;
+    }
+
+    .cabecalho{
+        background-image: url(../imagens/skate-wallpaper2.jpg);
+        padding: 4em 0em;
+        background-position: center top;
+        background-size: cover;
+    }
+    .cabecalho-menu{
+        margin: 6em 12em 0 2em;
+    }
+    .logo{
+        display: none;
+    }
+    .cabecalho-menu a{
+        color: rgb(44, 44, 44);
+        font-weight: 500;
+        position: relative;
+        top: 4em;
+        padding-bottom: 2em;
+    }
+}

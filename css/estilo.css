@@ -246,6 +246,7 @@ p{
     .cabecalho-menu{
         float: right;
         margin: 3.5em 3em 1em 0.5em;
+        display: inline;
     }
     .cabecalho-menu ul{
         padding: 0;
@@ -385,16 +386,16 @@ p{
         background-size: cover;
     }
     .cabecalho-menu{
-        margin: 6em 10em 0 2em;
+        margin: 6em 12em 0 2em;
     }
     .logo{
-        font-size: 4em;
-        margin: 1.8em 0 0 1em;
+        display: none;
     }
     .cabecalho-menu a{
         color: rgb(44, 44, 44);
         font-weight: 500;
         position: relative;
         top: 4em;
+        padding-bottom: 2em;
     }
 }
