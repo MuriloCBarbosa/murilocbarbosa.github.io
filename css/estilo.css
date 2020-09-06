@@ -69,7 +69,7 @@ p{
 }
 .cabecalho-menu{
     text-align: center;
-    background-color: black;
+    background-color: transparent;
 }
 .cabecalho-menu ul{
     margin: 0;
@@ -178,8 +178,15 @@ p{
 .pagina-noticia p:last-child{
     margin-bottom: 2em;
 }
+.imagem-noticia{
+    text-align: center;
+    width: 90%;
+    margin: 0 5%;
+}
 .pagina-noticia img{
-    width: 80%;
+    max-width: 100%;
+    border: 2px solid white;
+    box-shadow: 1px 1px 3px rgb(146, 146, 146);
 }
 
 
@@ -254,7 +261,7 @@ p{
         font-size: 1em;
     }
     .cabecalho-menu a:hover{
-        background-color: black;
+        background-color: transparent;
         color: rgb(14, 112, 14);
     }
     /*corpo*/
@@ -369,5 +376,25 @@ p{
     }
     .noticia-final{
         margin-bottom: 2em;
+    }
+
+    .cabecalho{
+        background-image: url(../imagens/skate-wallpaper2.jpg);
+        padding: 4em 0em;
+        background-position: center top;
+        background-size: cover;
+    }
+    .cabecalho-menu{
+        margin: 6em 10em 0 2em;
+    }
+    .logo{
+        font-size: 4em;
+        margin: 1.8em 0 0 1em;
+    }
+    .cabecalho-menu a{
+        color: rgb(44, 44, 44);
+        font-weight: 500;
+        position: relative;
+        top: 4em;
     }
 }
