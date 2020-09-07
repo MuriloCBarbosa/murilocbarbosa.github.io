@@ -48,6 +48,7 @@ label span{
     background-color: white;
     transition: 0.4s ease-in-out;
 }
+
 label span:nth-child(1){
     top: 0;
 }
@@ -56,6 +57,19 @@ label span:nth-child(2){
 }
 label span:nth-child(3){
     top: 1.25em;
+}
+#checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 7px;
+    background-color: red;
+}
+#checkbox-menu:checked + label span:nth-child(2){
+    display: none;
+}
+#checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 7px;
+    background-color: red;
 }
 
 
