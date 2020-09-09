@@ -46,7 +46,7 @@ input[type="checkbox"]:checked ~ nav{
     text-align: left;
     margin-top: 0.7em;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 .cabecalho-menu a:hover{
     color: white;
