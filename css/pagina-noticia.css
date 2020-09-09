@@ -32,6 +32,10 @@ header{
     position: fixed;
     left: -50%;
     transition: all 0.5s ease-in-out;
+    overflow: scroll;
+}
+.cabecalho-menu::-webkit-scrollbar{
+    display: none;
 }
 input[type="checkbox"]:checked ~ nav{
     transform: translateX(125%);
