@@ -25,7 +25,8 @@ header{
     display: none;
 }
 .cabecalho-menu{
-    background-color: rgba(255, 255, 255, 0.795);
+    background-color: rgba(85, 84, 84, 0.795);
+    background-image: linear-gradient(to right, rgb(37, 37, 37), rgb(129, 129, 129));
     height: 100%;
     width: 40%;
     position: fixed;
@@ -44,7 +45,8 @@ input[type="checkbox"]:checked ~ nav{
     display: block;
     text-align: left;
     margin-top: 0.7em;
-    color: black;
+    color: white;
+    font-size: 1.3em;
 }
 .cabecalho-menu a:hover{
     color: white;
@@ -133,16 +135,16 @@ label span:nth-child(3){
 /* 780 / 16 = 48.75 */
 @media screen and (min-width: 48.75em){
 
-    .cabecalho-menu{
-        display: inline;
+    .principal{
+        position: relative;
     }
     
-    .botao-menu{
+    #checkbox-menu, label{
         display: none;
     }
     
     .logo{
-        margin: 1em 0 2em 9.05em;
+        margin: 1em 0 0.25em 3em;
         height: 7%;
         width: 7%;
         float: left;
@@ -151,7 +153,13 @@ label span:nth-child(3){
         border-bottom: 2px rgb(230, 230, 230) solid;
     }
     .cabecalho-menu{
-        float: right;
+        display: inline;
+        position: absolute;
+        left: 15%;
+        width: 100%;
+        background: none;
+        bottom: 3.1em;
+        padding: 0;
         margin: 3.5em 3em 1em 0.5em;
     }
     .cabecalho-menu ul{
@@ -166,6 +174,7 @@ label span:nth-child(3){
     }
     .cabecalho-menu a{
         font-size: 1em;
+        color: white;
     }
     .cabecalho-menu a:hover{
         background-color: transparent;
@@ -221,6 +230,32 @@ label span:nth-child(3){
         font-weight: 500;
         position: relative;
         top: 4em;
+        padding-bottom: 2em;
+    }
+}
+
+
+@media screen and (min-width: 78em){
+    
+
+    .cabecalho{
+        background-image: url(../imagens/skate-wallpaper2.jpg);
+        padding: 9.3em 0em;
+        background-position: center top;
+        background-size: cover;
+    }
+    .cabecalho-menu{
+        margin: 6em 12em 0 2em;
+    }
+    .logo{
+        display: none;
+    }
+    .cabecalho-menu a{
+        color: rgb(44, 44, 44);
+        font-weight: 500;
+        position: relative;
+        top: 8em;
+        right: 8.3em;
         padding-bottom: 2em;
     }
 }
