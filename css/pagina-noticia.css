@@ -15,7 +15,7 @@ header{
     padding: 1em;
     width: 12%;
     height: 12%;
-    transform: translate(-25%, 0%);
+    transform: translate(0%, 0%);
 }
 .botao-menu{
     float: left;
@@ -28,7 +28,7 @@ header{
     background-color: rgba(255, 255, 255, 0.795);
     height: 100%;
     width: 40%;
-    position: absolute;
+    position: fixed;
     left: -50%;
     transition: all 0.5s ease-in-out;
 }
@@ -48,6 +48,9 @@ input[type="checkbox"]:checked ~ nav{
 }
 .cabecalho-menu a:hover{
     color: white;
+}
+.cabecalho-menu li:last-child{
+    border: none;
 }
 label{
     cursor: pointer;
