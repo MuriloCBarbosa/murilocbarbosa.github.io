@@ -29,6 +29,10 @@ p{
     display: block;
     clear: both;
 }
+
+
+.lista-pagina .active a, .lista-pagina a:hover, .lista-pagina li:hover > a{color: white; background-color:rgb(14, 112, 14); border-color: rgb(14, 112, 14);}
+
 /*botão*/
 .botao{
     background-color: rgb(29, 197, 29);
